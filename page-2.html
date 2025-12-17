@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/qorion-eon/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/qorion-eon/assets/styles-CpsCDmeB.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="header__container container">
+      <a href="./#hero" class="header__logo">
+          Qorion<span class="text-accent">-Eon</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav" id="nav-menu">
+          <ul class="header__list">
+              <li class="header__item"><a href="./#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#benefits" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#education" class="header__link">Обучение</a></li>
+          </ul>
+          <div class="header__mobile-cta">
+              <a href="./#contact" class="btn btn--small">Начать сейчас</a>
+          </div>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--header desktop-only">Начать сейчас</a>
+          <button class="header__burger" id="burger-btn" aria-label="Открыть меню">
+              <i data-lucide="menu"></i>
+          </button>
+      </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +46,60 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col footer__col--brand">
+              <a href="./#hero" class="footer__logo">Qorion-Eon</a>
+              <p class="footer__desc">
+                  Платформа года. Передовая цифровая инфраструктура для тех, кто строит будущее уже сегодня.
+              </p>
+              <p class="footer__note">Предложение активно только в странах ЕС.</p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__links">
+                  <li><a href="./#about">О платформе</a></li>
+                  <li><a href="./#innovation">Технологии</a></li>
+                  <li><a href="./#education">База знаний</a></li>
+                  <li><a href="./#contact">Консультация</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__links">
+                  <li><a href="./privacy.html">Политика конфиденциальности</a></li>
+                  <li><a href="./cookies.html">Политика cookies</a></li>
+                  <li><a href="./terms.html">Условия использования</a></li>
+                  <li><a href="./return.html">Политика возврата</a></li>
+                  <li><a href="./disclaimer.html">Отказ от ответственности</a></li>
+                  <li><a href="./personal-data-policy.html">Обработка данных</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i data-lucide="map-pin" class="icon-sm"></i>
+                      <span>Friedrichstraße 123, 10117 Berlin, Deutschland</span>
+                  </li>
+                  <li>
+                      <i data-lucide="mail" class="icon-sm"></i>
+                      <a href="mailto:hello@qorion-eon.blog">hello@qorion-eon.blog</a>
+                  </li>
+                  <li>
+                      <i data-lucide="phone" class="icon-sm"></i>
+                      <a href="tel:+493019283746">+49 30 1928 3746</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Qorion-Eon. Все права защищены.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>

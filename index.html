@@ -1,56 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/qorion-eon/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qorion-Eon | Инновации на пальцах</title>
+    <meta name="description" content="Образовательная платформа нового поколения. Технологии, которые работают на вас.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23111111%22/><circle cx=%2250%22 cy=%2250%22 r=%2235%22 fill=%22%23ccff00%22/></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/qorion-eon/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/qorion-eon/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/qorion-eon/assets/styles-CpsCDmeB.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="header__container container">
+      <a href="./#hero" class="header__logo">
+          Qorion<span class="text-accent">-Eon</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav" id="nav-menu">
+          <ul class="header__list">
+              <li class="header__item"><a href="./#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="./#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="./#benefits" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="./#education" class="header__link">Обучение</a></li>
+          </ul>
+          <div class="header__mobile-cta">
+              <a href="./#contact" class="btn btn--small">Начать сейчас</a>
+          </div>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--header desktop-only">Начать сейчас</a>
+          <button class="header__burger" id="burger-btn" aria-label="Открыть меню">
+              <i data-lucide="menu"></i>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="smooth-wrapper">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="hero__bg-grid"></div>
+  <div class="container hero__container">
+      <div class="hero__meta">
+          <span class="badge">v.2.0.25</span>
+          <span class="badge badge--outline">Available in EU</span>
+      </div>
+
+      <h1 class="hero__title" id="hero-title">
+          QORION<br>
+          <span class="text-stroke">EON</span><br>
+          BLOG
+      </h1>
+
+      <div class="hero__bottom">
+          <p class="hero__desc">
+              Инновации на пальцах. <br>
+              Образовательная платформа, меняющая правила игры.
+          </p>
+          <div class="hero__cta">
+              <a href="#contact" class="btn btn--large">
+                  Начать сейчас <i data-lucide="arrow-up-right"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee__inner">
+      <span>ПЛАТФОРМА ГОДА +++ ИННОВАЦИИ НА ПАЛЬЦАХ +++ ВОПЛОТИТЕ МЕЧТЫ В РЕАЛЬНОСТЬ +++ </span>
+      <span>ПЛАТФОРМА ГОДА +++ ИННОВАЦИИ НА ПАЛЬЦАХ +++ ВОПЛОТИТЕ МЕЧТЫ В РЕАЛЬНОСТЬ +++ </span>
+  </div>
+</div>
+
+<section class="section about" id="about">
+  <div class="container">
+      <div class="section__header">
+          <h2 class="section__title split-text">О платформе</h2>
+          <div class="section__line"></div>
+      </div>
+      <div class="about__grid">
+          <div class="about__main-text">
+              <p class="reveal-text">
+                  Мы предлагаем <strong>передовую цифровую инфраструктуру</strong> для тех, кто не боится будущего.
+                  Это не просто обучение — это стратегия роста на базе инноваций.
+                  Платформа уже доступна в Европе.
+              </p>
+          </div>
+          <div class="about__stat">
+              <span class="stat__num count-up" data-val="98">0</span>
+              <span class="stat__label">% успеха</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section benefits" id="benefits">
+  <div class="container">
+      <h2 class="section__title split-text">Преимущества</h2>
+      <div class="benefits__grid">
+          <div class="b-card">
+              <div class="b-card__icon"><i data-lucide="zap"></i></div>
+              <h3 class="b-card__title">Быстрый старт</h3>
+              <p class="b-card__text">Подключение занимает 2 минуты. Легко разобраться без опыта.</p>
+          </div>
+          <div class="b-card">
+              <div class="b-card__icon"><i data-lucide="trending-up"></i></div>
+              <h3 class="b-card__title">Пассивный доход</h3>
+              <p class="b-card__text">Программа пассивного дохода и технологии, работающие на вас.</p>
+          </div>
+          <div class="b-card">
+              <div class="b-card__icon"><i data-lucide="shield-check"></i></div>
+              <h3 class="b-card__title">Надежность</h3>
+              <p class="b-card__text">Экспертная поддержка на всех этапах. Методологии, доказавшие эффективность.</p>
+          </div>
+          <div class="b-card b-card--accent">
+              <h3 class="b-card__title">Доступ открыт</h3>
+              <p class="b-card__text">Переосмыслите подход к развитию сегодня.</p>
+              <a href="#contact" class="link-arrow">Регистрация <i data-lucide="arrow-right"></i></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section innovation" id="innovation">
+  <div class="container">
+      <div class="innovation__wrapper">
+          <div class="innovation__content">
+              <span class="tag">AI Core</span>
+              <h2 class="section__title split-text">Инновации</h2>
+              <p class="innovation__desc reveal-text">
+                  AI-инструменты для реальных задач. Наша система анализирует рынки в реальном времени,
+                  предоставляя вам практики, применимые уже сегодня.
+              </p>
+              <ul class="check-list">
+                  <li><i data-lucide="check"></i> Автоматизация процессов</li>
+                  <li><i data-lucide="check"></i> Прозрачная аналитика</li>
+                  <li><i data-lucide="check"></i> Безопасность данных</li>
+              </ul>
+          </div>
+          <div class="innovation__visual">
+              <div class="cyber-circle"></div>
+              <div class="cyber-circle cyber-circle--2"></div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section education" id="education">
+  <div class="container">
+      <h2 class="section__title split-text">Обучение</h2>
+      <div class="accordion">
+          <div class="accordion__item">
+              <div class="accordion__header">
+                  <span>01. Основы платформы</span>
+                  <i data-lucide="plus"></i>
+              </div>
+              <div class="accordion__body">
+                  <p>Пошаговый путь, понятный каждому. От регистрации до первых результатов.</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <div class="accordion__header">
+                  <span>02. Стратегии роста</span>
+                  <i data-lucide="plus"></i>
+              </div>
+              <div class="accordion__body">
+                  <p>Как построить карьеру, которая работает на вас. Углубленные методики.</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <div class="accordion__header">
+                  <span>03. Инструменты Qorion-Eon</span>
+                  <i data-lucide="plus"></i>
+              </div>
+              <div class="accordion__body">
+                  <p>Полный обзор функционала для максимизации эффективности.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+      <div class="contact__wrapper">
+          <div class="contact__info">
+              <h2 class="section__title">Начать<br>сейчас</h2>
+              <p>Запросить доступ и получить бесплатную консультацию.</p>
+          </div>
+          <form class="contact__form" id="lead-form">
+              <div class="form-group">
+                  <label>Ваше имя</label>
+                  <input type="text" name="name" required placeholder="Имя">
+              </div>
+              <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" name="email" required placeholder="hello@qorion-eon.blog">
+              </div>
+              <div class="form-group">
+                  <label>Телефон</label>
+                  <input type="tel" name="phone" required placeholder="+49 ...">
+              </div>
+              <div class="form-group captcha-group">
+                  <label id="captcha-label">Сколько будет 2 + 2?</label>
+                  <input type="number" id="captcha-input" required>
+              </div>
+              <div class="form-check">
+                  <input type="checkbox" id="policy" required>
+                  <label for="policy">Я согласен с <a href="./personal-data-policy.html">обработкой данных</a></label>
+              </div>
+              <button type="submit" class="btn btn--full">Отправить заявку</button>
+              <div class="form-message" id="form-message"></div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col footer__col--brand">
+              <a href="./#hero" class="footer__logo">Qorion-Eon</a>
+              <p class="footer__desc">
+                  Платформа года. Передовая цифровая инфраструктура для тех, кто строит будущее уже сегодня.
+              </p>
+              <p class="footer__note">Предложение активно только в странах ЕС.</p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__links">
+                  <li><a href="./#about">О платформе</a></li>
+                  <li><a href="./#innovation">Технологии</a></li>
+                  <li><a href="./#education">База знаний</a></li>
+                  <li><a href="./#contact">Консультация</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__links">
+                  <li><a href="./privacy.html">Политика конфиденциальности</a></li>
+                  <li><a href="./cookies.html">Политика cookies</a></li>
+                  <li><a href="./terms.html">Условия использования</a></li>
+                  <li><a href="./return.html">Политика возврата</a></li>
+                  <li><a href="./disclaimer.html">Отказ от ответственности</a></li>
+                  <li><a href="./personal-data-policy.html">Обработка данных</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i data-lucide="map-pin" class="icon-sm"></i>
+                      <span>Friedrichstraße 123, 10117 Berlin, Deutschland</span>
+                  </li>
+                  <li>
+                      <i data-lucide="mail" class="icon-sm"></i>
+                      <a href="mailto:hello@qorion-eon.blog">hello@qorion-eon.blog</a>
+                  </li>
+                  <li>
+                      <i data-lucide="phone" class="icon-sm"></i>
+                      <a href="tel:+493019283746">+49 30 1928 3746</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Qorion-Eon. Все права защищены.</p>
+      </div>
   </div>
 </footer>
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      </div>
+      <button id="accept-cookies" class="btn btn--small">Принять</button>
+  </div>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
   </body>
 </html>
