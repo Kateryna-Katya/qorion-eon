@@ -696,3 +696,95 @@ img { max-width: 100%; display: block; }
       bottom: -200px;
   }
 }
+/* --- LEGAL PAGES (Юридические страницы) --- */
+.pages {
+  padding-top: calc(var(--header-height) + 60px);
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.pages__wrapper {
+  max-width: 800px; /* Узкая колонка для удобного чтения */
+  margin: 0 auto;
+}
+
+.pages h1 {
+  font-family: var(--font-head);
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--accent-lime);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+  line-height: 1.1;
+}
+
+.pages h2 {
+  font-family: var(--font-head);
+  font-size: 24px;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pages h2::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-purple);
+}
+
+.pages p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.pages strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.pages a {
+  color: var(--accent-lime);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.pages a:hover {
+  border-bottom-color: var(--accent-lime);
+}
+
+/* Списки в юридических текстах */
+.pages ul {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+.pages li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: var(--text-main);
+}
+
+.pages li::before {
+  content: '/'; /* Стильный маркер списка */
+  position: absolute;
+  left: 0;
+  color: var(--accent-lime);
+  font-weight: 800;
+  font-family: var(--font-head);
+}
+
+.pages ul ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
