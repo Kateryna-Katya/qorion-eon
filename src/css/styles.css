@@ -710,7 +710,7 @@ img { max-width: 100%; display: block; }
 
 .pages h1 {
   font-family: var(--font-head);
-  font-size: clamp(32px, 5vw, 48px);
+  font-size: clamp(26px, 5vw, 48px);
   color: var(--accent-lime);
   text-transform: uppercase;
   margin-bottom: 40px;
